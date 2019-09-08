@@ -1,0 +1,53 @@
+.Toolbar {
+	height: 90px;
+	width: 100%;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+}
+
+.Toolbar ul {
+	padding: 0;
+	margin: 0 0 10px 0;
+	text-decoration: none;
+	list-style: none;
+	font-weight: 700;
+	font-size: 18px;
+	display: flex;
+}
+
+.Toolbar li {
+	border-radius: 4px;
+	margin-left: 40px;
+	padding: 10px 17px;
+	transition: all 0.25s ease;
+}
+
+.Toolbar li:nth-of-type(1) {
+	color: white;
+	background-color: #887FDB;
+}
+
+.Toolbar li:hover {
+	color: white;
+	background-color: #887FDB;
+}
+
+.Toolbar .add-button {
+	display: flex;
+	font-size: 17px;
+	color: #887FDB;
+	align-items: center;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	background: #F9F9F9;
+	margin-right: 50px;
+	margin-top: 5px;
+	text-decoration: none;
+}
+
+.add-button img {
+	width: 22px;
+	margin-right: 20px;
+}

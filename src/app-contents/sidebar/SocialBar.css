@@ -1,0 +1,33 @@
+.SocialBar {
+	display: flex;
+	margin: 0;
+	flex-direction: column;
+	justify-content: flex-end;
+	margin-top: 30px;
+}
+
+.icons {
+	display: flex;
+}
+
+.icons img {
+	width: 18px;
+	margin-left: 0;
+	padding: 0;
+	margin-right: 23px;
+	transition: opacity 0.2s;
+	-webkit-transition: opacity 0.2s;
+	cursor: pointer;
+	/*margin: 0 10px;*/
+}
+
+.icons img:hover {
+	opacity: 0.8;
+}
+
+.SocialBar p {
+	font-size: 15px;
+	color: #FFFFFF;
+	letter-spacing: 0;
+	margin-left: 5px;
+}

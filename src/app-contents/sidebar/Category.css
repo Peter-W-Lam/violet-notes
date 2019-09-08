@@ -1,0 +1,31 @@
+.Category {
+	display: flex;
+	align-items: center;
+	/* margin-left: 36px; */
+	margin: 3px 10px;
+	padding-left: 26px;
+	width: 100%;
+	-webkit-transition: background-color 0.2s;
+	transition: background-color 0.2s;
+	cursor: pointer;
+}
+
+.category-circle {
+	width: 7px;
+	height: 8px;
+	border-radius: 50%;
+}
+
+.Category p {
+	font-size: 15px;
+	color: #FFFFFF;
+	letter-spacing: 1px;
+	margin-left: 28px;
+}
+
+.Category:hover {
+	
+	background-color: rgb(89, 78, 173);
+	border-radius: 5px;
+	
+}

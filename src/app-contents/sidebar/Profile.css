@@ -1,0 +1,39 @@
+.Profile {
+	height: 70px;
+	background-color: #6A5EC2;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	margin: 0;
+}
+
+.profile-picture {
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+}
+
+.arrow {
+	width: 8px;
+	margin-bottom: 15px;
+	margin-left: 12px;
+}
+
+.profile-description {
+	margin-left: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.Profile .name {
+	font-size: 18px;
+	padding: 0;
+	margin: 0;
+}
+
+.Profile .member-text {
+	font-size: 13px;
+	margin: 0;
+	padding: 0;
+}

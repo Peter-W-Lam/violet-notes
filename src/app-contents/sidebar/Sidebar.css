@@ -1,0 +1,70 @@
+.Sidebar {
+	background-color: #887FDB;
+	width: 20vw;
+	height: 100vh;
+	position: fixed;
+}
+
+.underline {
+	left: 0;
+	width: 6px;
+	height: 65px;
+	top: 265px;
+	border-radius: 3px;
+	background: #FFF;
+	position: absolute;
+	-webkit-transition: 0.5s ease;
+}
+
+.MenuItem {
+	-webkit-transition: 0.5s ease;
+}
+
+.MenuItem:nth-of-type(1):hover ~ .underline {
+	top: 140px;
+}
+
+.MenuItem:nth-of-type(2):hover ~ .underline {
+	top: 202px;
+}
+
+.MenuItem:nth-of-type(4):hover ~ .underline {
+	top: 332px;
+}
+
+.MenuItem:nth-of-type(5):hover ~ .underline {
+	top: 390px;
+}
+
+
+.pages {
+	
+	margin-top: 1.5vh;
+	padding: 0 2.5vw;
+}
+
+.line {
+	width: 200px;
+	height: 5px;
+	border-top: 1px solid #6A5EC2;
+	margin-left: 40px;
+}
+
+.Sidebar .SocialBar {
+	margin-left: 30px;
+}
+
+.categories {
+	margin-top: 1vh;
+}
+
+
+@media only screen and (max-height: 750px) {
+	.Sidebar {
+		overflow-y: scroll;
+	}
+
+	.underline {
+		height: 0px;
+	}
+}

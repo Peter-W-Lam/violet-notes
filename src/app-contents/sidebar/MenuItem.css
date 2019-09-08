@@ -1,0 +1,14 @@
+.MenuItem {
+	color: white;
+	display: flex;
+	cursor: pointer;
+}
+
+.MenuItem p {
+	font-size: 15px;
+	margin-left: 29px;
+}
+
+.MenuItem img {
+	width: 20px;
+}
