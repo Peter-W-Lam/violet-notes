@@ -7,11 +7,29 @@ class Card extends React.Component {
 		if (descrip.length > 85) {
 			descrip = descrip.slice(0, 85)
 		}
+		var categoryColor;
+		switch(this.props.category) {
+			case 1: 
+				categoryColor = {
+					backgroundColor: "#F3CC71"
+				}
+				break
+			case 2:
+				categoryColor = {
+					backgroundColor: "#53D1F0"
+				}
+				break
+			default: 
+				categoryColor = {
+					backgroundColor: "#F29D53"
+				}
+				break
+		}
 		return(
 			<div className="Card">
 				<p className="date">{this.props.date}</p>
 				<div className="title-block">
-					<div className="category-circle"></div>
+					<div style={categoryColor} className="category-circle"></div>
 					<h3 className="title">{this.props.title}</h3>
 				</div>
 				<p className="description">{descrip}</p>

@@ -1,7 +1,7 @@
 import React from 'react'
 import './Toolbar.css'
 import Add from '../assets/add.png'
-// import { Link } from "react-router-dom"
+import { Link } from "react-router-dom"
 class Toolbar extends React.Component {
 	
 
@@ -18,12 +18,12 @@ class Toolbar extends React.Component {
 					<li>Business</li>
 					<li>Personal</li>
 				</ul>
-				{/* <Link style={linkStyle} to="/writer"> */}
+				<Link style={linkStyle} to="/app/editor">
 				<button className="add-button">
 					<img src={Add} alt="Plus sign in circle"/>
 					<p>Add new note</p>
 				</button>
-				{/* </Link> */}
+				</Link>
 			</div>
 		)
 	}

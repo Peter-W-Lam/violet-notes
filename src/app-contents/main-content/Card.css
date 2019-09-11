@@ -38,11 +38,10 @@
 }
 
 .category-circle {
-	background-color: #53D1F0;
+	/* background-color: #53D1F0; */
 	width: 9px;
 	height: 9px;
 	border-radius: 50%;
-	-webkit-transition: 0.5 ease;
 }
 
 .description {

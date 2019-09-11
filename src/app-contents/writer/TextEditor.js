@@ -7,7 +7,7 @@ class TextEditor extends React.Component {
 	render() {
 		return(
 			<div className="TextEditor">
-				<Link className="close-link" to="/">
+				<Link className="close-link" to="/app">
 					<button className="close-btn">
 						<img src={Close} alt="X to close editor" />
 					</button>

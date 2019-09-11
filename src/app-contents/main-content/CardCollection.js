@@ -8,6 +8,7 @@ class CardCollection extends React.Component {
 		// console.log(cardsData)
 		const cardComponents = cardData.map(card => <Card title={card.title} 
 														   date={card.date} 
+														   category={card.category}
 														   description={card.description} />)
 
 		return(
