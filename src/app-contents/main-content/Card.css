@@ -38,8 +38,7 @@
 }
 
 .category-circle {
-	/* background-color: #53D1F0; */
-	width: 9px;
+	min-width: 9px;
 	height: 9px;
 	border-radius: 50%;
 }

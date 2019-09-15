@@ -12,10 +12,10 @@ class Main extends React.Component {
         return(
             <div className="Main">
                 <Sidebar />
-                <Router>
+                <Switch>
                     <Route path="/app" exact component={Dashboard} />
                     <Route path="/app/editor" component={Writer} />
-                </Router>
+                </Switch>
             </div>
         )
     }
