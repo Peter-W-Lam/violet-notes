@@ -13,10 +13,10 @@ class TextEditor extends React.Component {
 					</button>
 				</Link>
 				<div className="text-editor-contents">
-					<input className="title-area" type="text" placeholder=" Enter a title..." />
+					<input className="title-area" type="text" placeholder=" Enter a title..." value={this.props.title}/>
 					<div className="line"></div>
 					<Tags />
-					<textarea className="text-area" placeholder=" Write something beautiful!"></textarea>
+					<textarea className="text-area" placeholder=" Write something beautiful!" value={this.props.description}></textarea>
 				</div>
 			</div>
 		)

@@ -14,7 +14,10 @@ class Main extends React.Component {
                 <Sidebar />
                 <Switch>
                     <Route path="/app" exact component={Dashboard} />
-                    <Route path="/app/editor" component={Writer} />
+                    <Route 
+                        path="/app/editor" 
+                        render={(props) => <Writer title="Just some thots"/>}
+                    />
                 </Switch>
             </div>
         )

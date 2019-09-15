@@ -9,14 +9,29 @@ class CardCollection extends React.Component {
 		const cardComponents = cardData.map((card) => {
 			var query = this.props.query
 			query = query.toUpperCase()
+			
+			// TODO: Clean up this if statement
 			if (query != undefined) {
 				if (card.title.toUpperCase().includes(query) || card.description.toUpperCase().includes(query)) {
-					return (
+					if (this.props.category) {
+						if (this.props.category == card.category) {
+							return (
+								<Card title={card.title} 
+								date={card.date} 
+								category={card.category}
+								description={card.description} />
+							)
+						}
+					} else {
+						return (
 						<Card title={card.title} 
 						date={card.date} 
 						category={card.category}
 						description={card.description} />
 					)
+					}
+
+					
 				}
 			} else {
 				return (

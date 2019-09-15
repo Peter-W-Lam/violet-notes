@@ -9,15 +9,21 @@ class Dashboard extends React.Component {
 		super(props)
 
 		this.state = {
-			query: ""
+			query: "", 
+			category: 0
 		}
 
 		this.handleChange = this.handleChange.bind(this)
+		this.getCategory = this.getCategory.bind(this)
 	}
 
 	// Pass value down to the query 
 	handleChange(value) {
 		this.setState({query: value})
+	}
+
+	getCategory(value) {
+		this.setState({category: value})
 	}
 	
 	render() {
@@ -25,9 +31,9 @@ class Dashboard extends React.Component {
 			<div className="Dashboard">
 				<SearchBar handleChange={this.handleChange}/>
 				<div className="categories-toolbar">
-		        	<Toolbar />
+		        	<Toolbar getCategory={this.getCategory}/>
 				</div>
-		        <CardCollection query={this.state.query} />
+		        <CardCollection query={this.state.query} category={this.state.category}/>
 			</div>
 		)
 	}
