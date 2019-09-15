@@ -17,8 +17,6 @@ class Toolbar extends React.Component {
 		this.props.getCategory(category)
 	}
 
-
-
 	render() {
 		const linkStyle = {
 			textDecoration: "none"

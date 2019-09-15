@@ -9,7 +9,7 @@ class CardCollection extends React.Component {
 		const cardComponents = cardData.map((card) => {
 			var query = this.props.query
 			query = query.toUpperCase()
-			
+
 			// TODO: Clean up this if statement
 			if (query != undefined) {
 				if (card.title.toUpperCase().includes(query) || card.description.toUpperCase().includes(query)) {
@@ -19,7 +19,8 @@ class CardCollection extends React.Component {
 								<Card title={card.title} 
 								date={card.date} 
 								category={card.category}
-								description={card.description} />
+								description={card.description} 
+								setWriter={this.props.setWriter}/>
 							)
 						}
 					} else {
@@ -27,7 +28,8 @@ class CardCollection extends React.Component {
 						<Card title={card.title} 
 						date={card.date} 
 						category={card.category}
-						description={card.description} />
+						description={card.description} 
+						setWriter={this.props.setWriter}/>
 					)
 					}
 
@@ -38,7 +40,8 @@ class CardCollection extends React.Component {
 					<Card title={card.title} 
 					date={card.date} 
 					category={card.category}
-					description={card.description} />
+					description={card.description} 
+					setWriter={this.props.setWriter}/>
 				)
 			}
 			

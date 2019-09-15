@@ -5,7 +5,7 @@ class Writer extends React.Component {
 	render() {
 		return(
 			<div className="Writer">
-				<TextEditor title={this.props.title}/>
+				<TextEditor title={this.props.title} description={this.props.description}/>
 			</div>
 		)
 	}

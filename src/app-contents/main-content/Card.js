@@ -1,6 +1,7 @@
 import React from 'react'
 import './Card.css'
-
+import { Link } from 'react-router-dom'
+import { NONAME } from 'dns';
 class Card extends React.Component {
 	render() {
 		var descrip = this.props.description;
@@ -35,6 +36,8 @@ class Card extends React.Component {
 				break
 		}
 		return(
+			<Link to="app/editor/" style={{textDecoration: "none"}}
+			onClick={() => this.props.setWriter(this.props.title, this.props.description)}>
 			<div className="Card">
 				<p className="date">{this.props.date}</p>
 				<div className="title-block">
@@ -44,6 +47,7 @@ class Card extends React.Component {
 				<p className="description">{descrip}</p>
 				<div className="overlay"></div>
 			</div>
+			</Link>
 		)
 	}
 }
