@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/violet-notes/static/css/main.a4b3de41.chunk.css",
+    "main.js": "/violet-notes/static/js/main.1cedfaa2.chunk.js",
+    "main.js.map": "/violet-notes/static/js/main.1cedfaa2.chunk.js.map",
+    "runtime~main.js": "/violet-notes/static/js/runtime~main.672af5d0.js",
+    "runtime~main.js.map": "/violet-notes/static/js/runtime~main.672af5d0.js.map",
+    "static/js/2.194cc60d.chunk.js": "/violet-notes/static/js/2.194cc60d.chunk.js",
+    "static/js/2.194cc60d.chunk.js.map": "/violet-notes/static/js/2.194cc60d.chunk.js.map",
+    "index.html": "/violet-notes/index.html",
+    "precache-manifest.8952d83b2ee2b1f2177b9fc04b1cf303.js": "/violet-notes/precache-manifest.8952d83b2ee2b1f2177b9fc04b1cf303.js",
+    "service-worker.js": "/violet-notes/service-worker.js",
+    "static/css/main.a4b3de41.chunk.css.map": "/violet-notes/static/css/main.a4b3de41.chunk.css.map",
+    "static/media/calendar.svg": "/violet-notes/static/media/calendar.ec2d1529.svg",
+    "static/media/documents.svg": "/violet-notes/static/media/documents.746547c3.svg",
+    "static/media/down-arrow.svg": "/violet-notes/static/media/down-arrow.8424676c.svg",
+    "static/media/facebook-logo.svg": "/violet-notes/static/media/facebook-logo.c9d62d2b.svg",
+    "static/media/headphones.svg": "/violet-notes/static/media/headphones.070d9b99.svg",
+    "static/media/home.svg": "/violet-notes/static/media/home.aeaf2615.svg",
+    "static/media/linkedin.svg": "/violet-notes/static/media/linkedin.227cee4e.svg",
+    "static/media/notes.svg": "/violet-notes/static/media/notes.cc671e84.svg",
+    "static/media/profile.jpg": "/violet-notes/static/media/profile.464aafec.jpg",
+    "static/media/AuthenticationCard.css": "/violet-notes/static/media/purple-background.a4db6a52.jpg",
+    "static/media/twitter.svg": "/violet-notes/static/media/twitter.cc2bb53b.svg"
+  }
+}
