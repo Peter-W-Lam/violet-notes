@@ -9,3 +9,22 @@
 	margin-top: 67px;
 	margin-left: 10px;
 }
+
+@media only screen and (max-width: 900px) {
+	.Dashboard {
+		width: 73vw;
+		margin-left: 27vw;
+	}
+}
+
+@media only screen and (max-width: 750px) { 
+	.Dashboard {
+		width: 67vw;
+		margin-left: 33vw;
+	}
+
+	.categories-toolbar {
+		margin-top: 10px;
+		
+	}
+}

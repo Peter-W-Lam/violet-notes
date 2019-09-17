@@ -11,7 +11,6 @@ class Profile extends React.Component {
 					 alt="Profile of user" />
 				<div className="profile-description">
 					<p className="name">Nadya Santarini</p>
-					<p className="member-text">Member since 2018</p>
 				</div>
 				<img className="arrow"
 					 src={Arrow}

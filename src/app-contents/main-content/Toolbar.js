@@ -34,11 +34,11 @@ class Toolbar extends React.Component {
 					<button onClick={() => this.updateCategory(3)}
 							id={this.state.lastButton == 3 ? "selected" : ""}>Personal</button>
 				</div>
-				<Link style={linkStyle} to="/app/editor">
-				<button className="add-button">
-					<img src={Add} alt="Plus sign in circle"/>
-					<p>Add new note</p>
-				</button>
+				<Link style={linkStyle} to="/app/editor" onClick={() => this.props.setWriter("", "")}>
+					<button className="add-button">
+						<img src={Add} alt="Plus sign in circle"/>
+						<p>Add new note</p>
+					</button>
 				</Link>
 			</div>
 		)

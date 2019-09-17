@@ -31,7 +31,7 @@ class Dashboard extends React.Component {
 			<div className="Dashboard">
 				<SearchBar handleChange={this.handleChange}/>
 				<div className="categories-toolbar">
-		        	<Toolbar getCategory={this.getCategory}/>
+		        	<Toolbar getCategory={this.getCategory} setWriter={this.props.setWriter}/>
 				</div>
 		        <CardCollection query={this.state.query} category={this.state.category} setWriter={this.props.setWriter}/>
 			</div>

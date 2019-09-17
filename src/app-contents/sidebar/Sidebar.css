@@ -68,3 +68,15 @@
 		height: 0px;
 	}
 }
+
+@media only screen and (max-width: 900px) {
+	.Sidebar {
+		width: 27vw;
+	}
+}
+
+@media only screen and (max-width: 750px) {
+	.Sidebar {
+		width: 33vw;
+	}
+}

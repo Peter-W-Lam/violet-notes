@@ -4,6 +4,14 @@ import Close from "../assets/close.png"
 import Tags from './Tags'
 import { Link } from "react-router-dom"
 class TextEditor extends React.Component {
+	constructor(props) {
+		super(props)
+		this.state = {
+			title: this.props.title, 
+			description: this.props.description
+		}
+	}
+
 	render() {
 		return(
 			<div className="TextEditor">
@@ -13,10 +21,17 @@ class TextEditor extends React.Component {
 					</button>
 				</Link>
 				<div className="text-editor-contents">
-					<input className="title-area" type="text" placeholder=" Enter a title..." value={this.props.title}/>
+					<input className="title-area" 
+						   type="text" 
+						   placeholder=" Enter a title..." 
+						   value={this.state.title}
+						   onChange={(e) => {this.setState({title: e.target.value})}}/>
 					<div className="line"></div>
 					<Tags />
-					<textarea className="text-area" placeholder=" Write something beautiful!" value={this.props.description}></textarea>
+					<textarea className="text-area" 
+							  placeholder=" Write something beautiful!" 
+							  value={this.state.description}
+							  onChange={(e) => {this.setState({description: e.target.value})}}></textarea>
 				</div>
 			</div>
 		)
